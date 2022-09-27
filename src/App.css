@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+html{
+  margin: 0;
+}
+body{
+  margin: 0;  
+}
+.topBar{
+  width: 100%;
+  background-color: #3F3F3F;
+  min-height: 120px;  
+  padding: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.topbartopbar{
+  background-color: rgb(255, 179, 0);
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 10px 20px;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  z-index: 2;
+  box-sizing: border-box;  
+}
+.topbartopbar div{
+  padding: 5px;
+  display: inline-block;
+}
+nav{
+  display: inline-block;
+  vertical-align: bottom;
+  position: absolute;  
+  bottom: 10px;
+  right: 30px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+nav li{
+  display: inline-block;
+  color: white;
+  
+  padding: 5px 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+nav li:hover{
+  background-color: #575757;  
+  box-shadow: 0 0 10px white;
+}
+.logosection{
+  float: left;  
+}
+.logo{  
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  
+  background-image: url("./Images/cofg_logo.png");
+  background-size: contain;  
+}
+.logotext{
+  display: inline-block;
+  vertical-align: top;
+  color: rgba(255, 255, 255, 0.786);
+  text-align: justify;
+}
+.logoText1{
+  font-size: 38px;
+  font-weight: bold;
+}
+.logoText2{
+  font-size: 26px;
+  font-weight: bold;
+}
+.infosection{
+  min-height: 300px;
+  padding: 80px 10px;  
+}
+.paper{
+  background-image: url("./Images/map-pattern-light.png");
+}
+.infosectioninner{
+  margin: auto;
+  width: 90%;
+  position: relative;
+}
+.infotextsection{
+  width: 50%;      
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.infotitle{
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 300;      
+}
+.infotext{
+  padding: 10px;
+  font-size: 20px;
+  width: 90%;
+  word-spacing: -1px;  
+  text-align: justify;
+}
+.backgroundImage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("Images/banner-image.jpg");
+  z-index: -1;
+}
+.infosection2{  
+  color: white;  
+}
+button{
+  height: 35px;
+  min-width: 140px;
+  outline: none;
+  border: none;
+  background-color: rgb(255, 179, 0);
+  margin: 10px;
+  color: rgb(68, 68, 66);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+}
+button:hover{
+  background-color: rgb(255, 199, 67);
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.footer{
+  width: 100%;
+  background-color: #3F3F3F;
+  min-height: 120px;  
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.footer nav{
+  vertical-align: top;
+  position: absolute;
+  top: 20px;
+}
+.infovideo{
+  width: 50%;
+  display: inline-block;  
+  /* -webkit-transform: scale3d(.2,.2,.2); */
+  /* position: absolute;
+  top: 0;
+  right: 0; */ 
+}
+.copyrightNotice{
+  color: white;
+  font-size: 12px;
+}
+.footerRight{
+  width: calc(100% - 400px);  
+  text-align: center;
+  display: inline-block;
+}
+.footerRight nav{
+  float: none;
+  position: relative;
+  top: 10px;
+}
+.footerTextLarge{
+  color: white;
+  font-size: 16px;
+  padding: 20px 5px 10px 5px;
+}
+.contactPage{
+  background-image: url("Images/background-texture-tile.png");
+  padding: 40px;
+}
+.contactGif{
+  width: 300px;
+}
+.contactInfo{
+  font-weight: bold;
+  margin: 40px;
+}
+.contactInfo div{
+  margin: 10px;
+}
+.aboutPage{
+  background-image: url("Images/background-texture-tile.png");
+  padding: 40px;
+  min-height: calc(100vh - 200px  );
+}
+.aboutText{
+  margin: 50px;
+}
+.aboutp{  
+  text-align: justify;
+  width: 80%;
+  margin: 10px auto;
+}
+.text1{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+}
+.text2{
+  font-size: 14px;
+  font-weight: bold;
+}
