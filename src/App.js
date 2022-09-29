@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Pages/Home';
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Careers from './Pages/Careers';
 import { useState } from 'react';
 /*
 
@@ -21,6 +22,9 @@ and put the point on other side of moltov building
 then it dissapeared
 class was services, medical, psychotheripy
 
+"homepage": "https://joegiusti.github.io/clear-orlando",
+"homepage": "http://clearorlando.com/",  
+
 */
 
 function App() {
@@ -34,11 +38,14 @@ function App() {
       return <About></About>
     else if( page == "contact")
       return <Contact></Contact>
+    else if( page == "careers")
+      return <Careers></Careers>
+      
   }
   return (
     <div className="App">
-              <div className="topbartopbar">
-            <div>
+        <div className="topbartopbar">
+            <div className='topBarLeft'>
                 Confidential Help | Proven Technology
             </div>
             <div>
@@ -62,7 +69,8 @@ function App() {
                 <ul>
                     <li onClick={()=>setPage("home")}>Home</li>
                     <li onClick={()=>setPage("about")}>About</li>
-                    <li onClick={()=>setPage("contact")}>Contact</li>                    
+                    <li onClick={()=>setPage("contact")}>Contact</li>   
+                    <li onClick={()=>setPage("careers")}>Careers</li>                                        
                 </ul>
             </nav>
         </div>
@@ -85,7 +93,8 @@ function App() {
                     <ul>
                       <li onClick={()=>setPage("home")}>Home</li>
                       <li onClick={()=>setPage("about")}>About</li>
-                      <li onClick={()=>setPage("contact")}>Contact</li>                       
+                      <li onClick={()=>setPage("contact")}>Contact</li>         
+                      <li onClick={()=>setPage("careers")}>Careers</li>                       
                     </ul>
                 </nav>                
                 <div className='footerTextLarge'>

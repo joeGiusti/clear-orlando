@@ -14,7 +14,9 @@ function InfoSectionPage(props) {
                 </p>
             </div>
             <div className="infovideo">
-            <iframe width="100%" height="315" src={props.videoEmbedUrl} frameborder="0" ></iframe>
+            <div className="videoContainer">
+                <iframe src={props.videoEmbedUrl} frameborder="0" ></iframe>
+            </div>      
             </div>
         </div>
     </div>

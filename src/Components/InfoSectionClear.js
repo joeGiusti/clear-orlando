@@ -5,7 +5,9 @@ function InfoSectionClear(props) {
     <div className="infosection infosection2">
         <div className='infosectioninner'>
             <div className="infovideo">
-                <iframe width="100%" height="315" src={props.videoEmbedUrl} frameborder="0" ></iframe>
+                <div className="videoContainer">
+                    <iframe src={props.videoEmbedUrl} frameborder="0" ></iframe>
+                </div>      
             </div>
             <div className="infotextsection">
                 <div className="infotitle">
